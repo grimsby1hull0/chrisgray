@@ -28,6 +28,11 @@ h3 {
     src: url(assets/Lionel\ Classic\ Regular.ttf);
 }
 
+@font-face {
+    font-family: credits;
+    src: url(assets/GoogleSansCode-VariableFont_wght.ttf);
+}
+
 
 html {
     background-image: url(assets/star-space-tile.jpg);
@@ -159,7 +164,7 @@ html {
 footer {
     min-height: 200px;
     color: white;
-    margin-bottom: 50px;
+    
 }
 
 
@@ -169,7 +174,7 @@ footer {
     color: white;
     text-decoration: none;
     align-items: center;
-
+    margin-top: 50px;
 }
 
 footer a {
@@ -180,4 +185,49 @@ footer a {
 footer table {
     display: block;
     text-align: center;
+}
+
+
+#planet {
+    background-color: rgb(229 229 229);
+    height: 200px;
+    border-radius: 500px 500px 0px 0px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(assets/img/New\ Piskel-1.png\ \(7\).png);
+    background-position: center;
+    background-position-x: -50px;
+
+
+    text-align: center;
+    font-family: credits;
+    font-size: smaller;
+    font-weight: 500;
+    padding-top: 30px;
+}
+
+
+#planet a {
+    color: rgb(231 255 232);
+    font-size: large;
+    text-shadow: 0px 2px black;
+    font-family: title ;
+}
+
+#planet a:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 5px rgb(109, 182, 0);
+}
+
+
+#credit {
+    font-family: credits !important; 
+    text-shadow: 0px 0px  !important; 
+    color: #24bd00 !important;
+}
+
+#credit:hover {
+    text-shadow: 0px 0px rgb(0, 123, 139) !important; 
+    color: coral !important;
 }
