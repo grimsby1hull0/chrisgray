@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<script>
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /* Loop through a collection of all HTML elements: */
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          /* Make an HTTP request using the attribute value as the file name: */
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+              if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+              if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+              /* Remove the attribute, and call this function once more: */
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
+            }
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /* Exit the function: */
+          return;
+        }
+      }
+    }
+</script>
+
+<html>
+    <head>
+        <title>Chris Gray, Sound Design</title>
+        <link rel="icon" href="assets/icon.ico">
+
+        <link href="style.css" rel="stylesheet">
+
+        <!-- <meta property="og:image"  content="" /> -->
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="robots" content="index, follow">
+        <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+        <meta charset="UTF-8">
+        <meta name="language" content="English">
+        <meta name="author" content="Arron Ware">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    </head>
+
+    <body>
+        
+        <div id="titlebox">
+            <div id="innertitlebox">
+                <h1 id="title">Chris Gray</h1>
+                <h3 id="subtitle">The Sound Guy</h3>
+            </div>
+            
+        </div>
+
+        <div id="home">
+            <div id="navbar">
+                <a href="#biography">biography</a>
+                <a href="#sound">sound design</a>
+                <a href="#writing">writing</a>
+                <a href="#portfolio">portfolio</a>
+                <a href="#contact">contact</a>
+            </div>
+            
+            <div style="width: 80%; margin: auto auto auto auto;">
+
+                
+                <div id="biography" class="contentbox" style="height: 400px; background-color: rgb(217 79 79);">
+                    
+                    <div class="left-header" style="background-color: maroon; ">
+                        <h1 class="sectionheader">biography</h1>
+                    </div>
+
+                    <img src="assets/img/salute.png" style="display: block; margin: 10px; border-radius: 20px;" height="70%" alt="Chris Gray salutes you">
+
+
+                    <div style="padding: 20px;"><h3>HELLO I am chris gray</h3></div>
+                    
+                </div>
+
+                <div id="sound" class="contentbox" style="float: right; height: 400px; background-color: rgb(253 217 98);">
+                    <div class="left-header" style="background-color: rgb(231, 177, 0);">
+                        <h1 class="sectionheader">sound design</h1>
+                    </div>
+
+                    <img src="assets/img/biopic.jpg" style="display: block; margin: 10px; border-radius: 20px;" height="70%" alt="Chris Gray holding a boom microphone">
+                    <div style="padding: 20px;"><h3>i am sound man, i hope you are huge fan</h3></div>
+                </div>
+
+                <div id="writing" class="contentbox" style="height: 400px; background-color: rgb(156 240 255);">
+                    <div class="left-header" style="background-color: rgb(0, 188, 221);">
+                        <h1 class="sectionheader">writing</h1>
+                    </div>
+                </div>
+
+                <div id="portfolio" class="contentbox" style="float: right; height: 400px; background-color: rgb(148 255 144);">
+                    <div class="left-header" style="background-color: rgb(7, 201, 0);">
+                        <h1 class="sectionheader">portfolio</h1>
+                    </div>
+                </div>
+
+
+                <div id="contact" class="contentbox" style="height: 400px; background-color: rgb(251 138 255);">
+                    <div class="left-header" style="background-color: rgb(171, 0, 177);">
+                        <h1 class="sectionheader">contact</h1>
+                    </div>
+                </div>
+
+            </div>
+            <!-- <div id="back" class="contentbox" style="height: 200px; background-color: rgb(75, 75, 75);">
+                <a href="#titlebox" style="color: white;
+                text-align: center;">Go to Beginning</a>
+            </div> -->
+            
+
+            
+
+
+            
+
+            
+
+
+            
+            
+        </div>
+        
+        <footer>
+            <br><br>
+            <div id="footercontainer">
+                
+                <table >
+                
+                <tr>
+                    
+                    <td><a href="">Instagram</a></td>
+                </tr>
+                <tr>
+                    <td><a href="">Instagram</a></td>
+                </tr>
+                </table>
+
+
+                <table >
+                <tr>
+                    
+                    <td><a href="">//////</a></td>
+                </tr>
+                <tr>
+                    
+                    <td><a href="">//////</a></td>
+                </tr>
+                <tr>
+                    <td><a href="">\\\\\\</a></td>
+                </tr>
+                </table>
+
+
+
+
+
+
+                <table >
+                <tr>
+                    
+                    <td><a href="#">_/\_</a></td>
+                </tr>
+                <tr>
+                    
+                    <td><a style="color: red;" href="#">[][][][]</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">+++++</a></td>
+                </tr>
+                <tr>
+                    
+                    <td><a href="#">(:-|-:)</a></td>
+                </tr>
+                <tr>
+                    
+                    <td><a href="#">*I**I*<a></td>
+                </tr>
+               
+                </table>
+
+
+                <table >
+                <br><br><br><br>
+                <tr>
+                    
+                    <td><a href="">\\\\\\</a></td>
+                </tr>
+                <tr>
+                    
+                    <td><a href="">\\\\\\</a></td>
+                </tr>
+                <tr>
+                    <td><a href="">//////</a></td>
+                </tr>
+                </table>
+
+
+                <table >
+                
+                <tr>
+                    
+                    <td><a href="">LINK</a></td>
+                </tr>
+                <tr>
+                    <td><a href="">LINK</a></td>
+                </tr>
+                </table>
+
+            </div>
+
+        </footer>
+        
+
+
+    </body>
+
+
+
+
+</html>
+
+<script>
+    includeHTML();
+</script>
