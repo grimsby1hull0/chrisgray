@@ -39,6 +39,7 @@ html {
     background-repeat:round;
     margin: 0;
     scroll-behavior: smooth;
+    contain: content;
 }
 
 /* TITLE BOX */
@@ -66,6 +67,7 @@ html {
     text-align: center;
     font-size: 100px;
     font-family: title;
+    
 }
 
 #subtitle {
@@ -234,4 +236,44 @@ footer table {
 #credit:hover {
     text-shadow: 0px 0px rgb(0, 123, 139) !important; 
     color: coral !important;
+}
+
+
+
+
+@media (min-width: 10px) and (max-width: 965px) {
+    .closemodal {
+      /* padding: 0px 30px 0px 10px; */
+      border-radius: 10px 0px 0px 10px;
+    }
+
+    #body {
+    width: 100%; 
+    
+    }
+
+    #titlebox {
+        height: 80vh;
+    }
+
+    .contentbox {
+        width: 97%;
+        margin: 0px;
+        margin-top: 50px !important;
+        border-radius: 0px 80px 80px 0px;
+        float: left;
+    }
+
+    .left-header {
+        width: 40px;
+        flex-shrink: 0;
+        min-width: 50px;
+    }
+
+    #body::after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
 }
