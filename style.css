@@ -35,11 +35,12 @@ h3 {
 
 
 html {
-    background-image: url(assets/star-space-tile.jpg);
+    background-image: url(assets/img/stars1.png);
     background-repeat:round;
     margin: 0;
     scroll-behavior: smooth;
     contain: content;
+    background-size: 70px;
 }
 
 /* TITLE BOX */
@@ -47,10 +48,11 @@ html {
 #titlebox {
     background-color: red;
     height: 90vh;
-    background-image: url(assets/img/grindlef.jpg);
+    background-image: url(assets/img/imacsmall.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
+    background-position-y: top;
 }
 
 #innertitlebox {
@@ -183,7 +185,8 @@ footer {
 }
 
 footer a {
-    color: white;
+    color:yellow;
+    font-weight: 900;
     font-size: x-large;
 }
 
@@ -218,6 +221,7 @@ footer table {
     font-size: large;
     text-shadow: 0px 2px black;
     font-family: title ;
+    background-color: transparent !important;
 }
 
 #planet a:hover {
@@ -239,13 +243,20 @@ footer table {
 
 
 .selfie {
-    display: block; 
-    margin: 10px; 
+    display: block;
+    margin: 10px;
     margin-left: auto;
-    margin-right: auto;
-    border-radius: 20px; 
+    margin-right: 10px;
+    border-radius: 20px;
     aspect-ratio: 0;
-    width: 300px;
+    float: left;
+}
+
+.description {
+    font-family: 'credits';
+    font-weight: 900;
+    text-shadow: 0 1px black;
+    font-size: 23px; /* NEW */
 }
 
 
