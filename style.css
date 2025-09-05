@@ -43,12 +43,135 @@ html {
     background-size: 70px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 20px;
+  text-align: center;
+  -webkit-text-stroke-width: thin;
+    transform: scale(1.5);
+    background-color: #434057;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 30px 0 0 30px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 30px;
+    background: transparent;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #686868;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #ffffff;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;
+    color: white;
+
+}
+
+/* Add a blue color to the author */
+.author {color: rgb(255, 255, 255); font-weight: 900;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* TITLE BOX */
 
 #titlebox {
     background-color: red;
     height: 90vh;
-    background-image: url(assets/img/imacsmall.jpg);
+    background-image: url(assets/img/imacsmallDARK.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -91,7 +214,7 @@ html {
     color: white;
     text-align: center;
     min-height: 50px;
-    background-color: #434057;
+    background-color: #3b384f;
     border-width: 0px 0px 1px 0px;
     border-style: solid;
     border-color: white;
@@ -197,22 +320,37 @@ footer table {
 
 
 #planet {
+    /* background-color: rgb(229 229 229);
+    height: 200px;
+    border-radius: 500px 500px 0px 0px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(assets/img/planet2.png);
+    background-position: center;
+    background-position-x: -50px;
+    text-align: center;
+    font-family: credits;
+    font-size: smaller;
+    font-weight: 500;
+    padding-top: 30px; */
+
     background-color: rgb(229 229 229);
     height: 200px;
     border-radius: 500px 500px 0px 0px;
     width: 400px;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(assets/img/New\ Piskel-1.png\ \(7\).png);
+    background-image: url(assets/img/planet2.png);
     background-position: center;
     background-position-x: -50px;
-
-
     text-align: center;
     font-family: credits;
     font-size: smaller;
     font-weight: 500;
     padding-top: 30px;
+    background-size: cover;
+    image-rendering: pixelated;
 }
 
 
@@ -265,6 +403,7 @@ footer table {
     margin: 10px;
     
 }
+
 
 
 

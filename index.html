@@ -8,9 +8,9 @@
 
         <link href="style.css" rel="stylesheet">
 
-        <!-- <meta property="og:image"  content="" /> -->
-        <meta name="description" content="">
-        <meta name="keywords" content="">
+        <meta property="og:image"  content="https://chrisgraysound.com/assets/img/chriswidgetpreview.png" />
+        <meta name="description" content="Chris Gray: Weaving Stories with a Symphony of Sounds">
+        <meta name="keywords" content="chris, gray, sound, design, engineering, mastering, music, field, recording, manchester, england, north, west, united kingdom">
         <meta name="robots" content="index, follow">
         <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
         <meta charset="UTF-8">
@@ -41,6 +41,35 @@
             
             <div id="body" >
 
+
+                <div class="slideshow-container">
+
+                    <div class="mySlides">
+                    <q>Chris is kind, easy-going, and incredibly passionate about his craft.</q>
+                    <p class="author">- Ash Wong (Director of "But Now My Eyes See You")</p>
+                    </div>
+
+                    <!-- <div class="mySlides">
+                    <q>Chris is a nice man.</q>
+                    <p class="author">- Arron Ware, Web afficianado and eternal</p>
+                    </div>
+
+                    <div class="mySlides">
+                    <q>Chris is a nice man.</q>
+                    <p class="author">- Arron Ware, Web afficianado and eternal</p>
+                    </div> -->
+
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+
+                    </div>
+
+                    <div class="dot-container">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <!-- <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span>  -->
+                </div>
+
                 
                 <div id="biography" class="contentbox" style="margin-top: 50px; background-color: rgb(217 79 79);">
                     
@@ -50,7 +79,7 @@
 
 
                     <div class="content-within">
-                        <img src="assets/img/biopic.png" width="300px" class="selfie"  alt="Chris Gray salutes you">
+                        <img src="assets/img/biopic.png" width="300px" class="selfie"  alt="Chris Gray smiles at the camera whislt on a film set">
 
 
                         <div style="padding: 20px;">
@@ -84,7 +113,7 @@
                     </div>
 
                     <div class="content-within">
-                        <img src="assets/img/sounddesignpic.png" width="400px" class="selfie" alt="Chris Gray holding a boom microphone">
+                        <img src="assets/img/sounddesignpic.png" width="400px" class="selfie" alt="Chris Gray posing with a film collaborator holding a clapperboard">
                         
                         <div style="padding: 20px;">
                             <h3 class="description">
@@ -115,7 +144,7 @@
                     </div>
 
                     <div class="content-within">
-                        <img src="assets/img/writingpic.png" class="selfie" alt="Chris Gray holding a boom microphone">
+                        <img src="assets/img/writingpic.png" class="selfie" alt="Chris Gray salutes you in an adventurous manner">
                         
                         <div style="padding: 20px;">
                             <h3 class="description">
@@ -161,17 +190,17 @@
                 </div>
 
 
-                <div id="contact" class="contentbox" style=" background-color: rgb(255, 255, 255);">
-                    <div class="left-header" style="background-color: rgb(37, 37, 37);">
-                        <h1 class="sectionheader">contact</h1>
+                <div id="contact" class="contentbox" style=" background-color: rgb(65 65 65);">
+                    <div class="left-header" style="background-color: rgb(255 255 245);">
+                        <h1 class="sectionheader" style="color: #434343;">contact</h1>
                     </div>
 
 
                     <div class="content-within">
-                        <img src="assets/img/contactpic.png" width="300px" class="selfie" alt="Chris Gray holding a boom microphone">
+                        <img src="assets/img/contactpic.png" width="300px" class="selfie" alt="Chris Gray holding a big microphone and waving to the camera with a friendly greeting expression">
                         
                         <div style="padding: 20px;">
-                            <h3 style="font-family: 'credits'; font-weight: 500; color: black; font-size: 20px; ">
+                            <h3 style="font-family: 'credits'; font-weight: 900; text-shadow: 0 1px black; font-size: 20px; ">
                                 If you’ve made it this far, thank you — you’ve probably noticed that my passion lies in telling stories of every kind, across every format. 
                                 Whether through music, sound, or writing, I love helping projects reach their full potential with recording, editing, mixing, mastering, 
                                 and beyond.
@@ -312,6 +341,41 @@
         </footer>
         
 
+
+
+
+
+
+
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            }
+        </script>
 
     </body>
 
