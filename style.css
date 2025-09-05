@@ -313,9 +313,11 @@ footer table {
     .selfie {
         margin-left: 10px;
         margin-right: 10px;
-        width: 50%;
+        /* width: 50%; Makes text go too short next to imgs*/
+        width: 45%;
         height: fit-content;
         float: left;
+        
     }
 
     #body::after {
