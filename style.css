@@ -168,9 +168,9 @@ q {font-style: italic;
 /* TITLE BOX */
 
 #titlebox {
-    background-color: red;
+    background-color: darkslategrey;
     height: 90vh;
-    background-image: url(assets/img/imacsmallDARK.jpg);
+    background-image: url(assets/img/imacdarksmallIM.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
