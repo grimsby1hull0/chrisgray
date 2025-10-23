@@ -87,12 +87,19 @@ html {
   top: 50%;
   width: auto;
   margin-top: -30px;
-  padding: 16px;
   color: #888;
   font-weight: bold;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
   user-select: none;
+}
+
+.next {
+    padding: 16px 4px 16px 16px
+}
+
+.prev {
+    padding: 16px 16px 16px 4px
 }
 
 /* Position the "next button" to the right */
@@ -104,7 +111,7 @@ html {
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  color: white;
+  
 }
 
 /* The dot/bullet/indicator container */
